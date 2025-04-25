@@ -45,7 +45,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center"> Weather Forecast</h1>
 
         {/* Search */}
-        <div className="form-control w-full">
+        <div className="form-control w-full flex gap-4">
           <div className="input-group">
             <input
               type="text"
@@ -54,7 +54,7 @@ export default function Home() {
               value={city}
               onChange={(e) => setCity(e.target.value)}
             />
-            <button className="mt-4 btn btn-primary" onClick={search}>Search</button>
+            <button className="btn btn-primary" onClick={search}>Search</button>
           </div>
         </div>
 
